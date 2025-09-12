@@ -92,8 +92,13 @@ public class AddressServiceImpl implements AddressService {
         address.setRecipientName(request.getRecipientName());
         address.setPhone(request.getPhone());
         address.setFullAddress(request.getFullAddress());
+<<<<<<< Updated upstream
         address.setCity(request.getCity());
         address.setProvince(request.getProvince());
+=======
+        address.setProvince(province);
+        address.setCity(city);
+>>>>>>> Stashed changes
         address.setPostalCode(request.getPostalCode());
         address.setPrimary(request.isPrimary());
     }
